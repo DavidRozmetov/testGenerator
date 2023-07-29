@@ -1,0 +1,52 @@
+.exam-header {
+  height: 120px;
+
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+
+  width: 80%;
+  margin-left: 10%;
+}
+.pdf {
+  overflow-x: scroll;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: white;
+  margin: auto;
+  margin-top: 10px;
+  height: auto;
+  width: 210mm;
+
+  break-inside: auto;
+}
+.paper {
+}
+
+.text-center {
+  text-align: center;
+}
+
+.single-line {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.exam-logo {
+  height: 1.16cm;
+  width: 0.94cm;
+}
+
+.column-2 {
+  border-top: solid black 1px;
+  column-count: 2;
+}
+
+.question-box {
+  margin-top: 10px;
+  break-inside: avoid-column;
+}
+
+.question-box li {
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/PDF.css" />
+    <title>Question Generator</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
+      integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="navbar"></div>
+
+      <div class="main">
+        <div class="forms" id="forms">
+          <div class="form">
+            <input type="file" id="upload" />
+            <br />
+            <br />
+            <label for="number-of-questions">Number of questions: </label>
+            <input
+              type="number"
+              id="number-of-questions"
+              min="20"
+              max="40"
+              step="5"
+              value="25"
+            />
+            <br />
+            <label for="versions">Test versions: (for example: ABCDE) </label>
+            <input
+              type="text"
+              id="versions"
+              maxlength="5"
+              style="width: 60px"
+            />
+          </div>
+          <div class="test-header">
+            <label for="header-school-name">School Name: </label>
+            <input
+              type="text"
+              id="header-school-name"
+              value="Sarasas Witaed Suvarnabhumi School"
+            />
+
+            <label for="header-exam-name">Exam Name: </label>
+            <input type="text" id="header-exam-name" value="PA 4" />
+            <label for="header-programmer-name">Programme Name</label>
+            <input
+              type="text"
+              id="header-programme-name"
+              value="Intensive English Programme"
+            />
+            <label for="header-grade-name">Grade</label>
+            <input type="text" id="header-grade-name" value="Year 9" />
+            <label for="header-subject-name">Subject</label>
+            <input type="text" id="header-subject-name" value="Reading" />
+            <label for="header-semester-name"> Semester: </label>
+            <input type="text" id="header-semester-name" value="2 / 2022" />
+            <label for="header-student-information">Student Information:</label>
+            <input
+              type="text"
+              id="header-student-information"
+              value="First name:_____________    Last name:________    Class:______     No:___"
+            />
+            <label for="exam-info">Exam info: </label>
+            <input
+              type="text"
+              id="exam-info"
+              value="Subject: Reading Year 9 Time: 50 minutes 30 Points"
+            />
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn-generate-quiz" id="btn-generate-quiz">
+            Generate Quiz
+          </button>
+          <button class="btn-generate-quiz" id="show-answer-keys">
+            Show The Answer Key
+          </button>
+          <button class="btn-generate-quiz" id="download-quiz">Download</button>
+        </div>
+      </div>
+
+      <div id="pdf" class="pdf"></div>
+      <div id="answer-sheets" class="answer-sheets"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

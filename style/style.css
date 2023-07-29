@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+}
+
+.container {
+  margin-top: 30px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #b3e5fc;
+  overflow-y: scroll;
+}
+.main {
+  height: 320px;
+  background-color: #ffffff;
+}
+
+.forms {
+  font-family: "Montserrat";
+  color: #01579b;
+  height: 180px;
+  font-size: 20px;
+  display: flex;
+}
+
+.form {
+  width: 40vw;
+  height: 180px;
+  margin-left: 10vw;
+}
+.form input {
+  height: 25px;
+}
+
+.btn-generate-quiz {
+  border: solid #03a9f4 1.2px;
+  color: #03a9f4;
+  background-color: #ffffff;
+  border-radius: 4px;
+  min-height: 60px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn-generate-quiz:hover {
+  background-color: rgba(3, 169, 244, 0.1);
+  cursor: pointer;
+}
+.btn-generate-quiz:active {
+  font-size: 15.5px;
+  border-color: rgba(3, 169, 244, 0.1);
+}
+
+.btn-generate-quiz {
+  display: block;
+  margin: 20px;
+  width: 20vw;
+  margin-left: 30vw;
+}
+
+.test-header {
+  width: 40vw;
+  height: 180px;
+}
+
+.test-header {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.test-header * {
+  flex-basis: 0;
+  flex-grow: 1;
+  height: 25px;
+  margin-top: 4px;
+}
+.test-header label {
+  min-width: 10vw;
+  font-size: 14px;
+  margin-top: 3px;
+}
+.test-header input {
+  min-width: 26vw;
+}
+
+@media print {
+  .main,
+  .btn-generate-quiz {
+    display: none;
+  }
+
+  .pdf {
+    position: absolute;
+    top: -40px;
+    left: 0;
+  }
+
+  .answer-sheet {
+    display: none;
+  }
+  .answer-sheet-img {
+    display: none;
+  }
+  .page-breaker {
+    page-break-after: always;
+  }
+}
+
+.buttons {
+  width: 80vw;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+}
+
+.buttons * {
+  min-width: 160px;
+  max-width: 280px;
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.highlighted {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.answer-sheets {
+  margin-top: 10px;
+  background: rgb(245, 245, 245);
+  width: 575px;
+  margin-left: 30vw;
+  display: -webkit-box;
+  position: relative;
+  visibility: hidden;
+  display: block;
+}
+
+.answer-sheet-img {
+  width: 575px;
+}
+.bubble {
+  position: absolute;
+  background: #333;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+.question-type {
+  background-color: #888888;
+  color: white;
+}
